@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel='stylesheet', href="css/home/index.css")
+    title Student ID
+  body
+    main
+      button.listAllBtn list all student
+      section.listAll__listAll
+
+      section.specific
+        section.specific__input.input
+          label.input student ID:
+          input#specific__input(type='text', name='Id')
+        button.specific__button search specific student
+        section.specific__respond
+
+      section.add
+        section.add.input
+          label.input student ID:
+          input#add__input(type='text', name='Id')
+        button.add__button add new student
+        section.add__respond
+
+      section.delete
+        section.delete__input.input
+          label.input student ID:
+          input#delete__input(type='text', name='Id')
+        button.delete__button delete specific student
+        section.delete__respond
+  script(src='js/home/index.js')

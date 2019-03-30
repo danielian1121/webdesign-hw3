@@ -1,0 +1,1 @@
+export const projectRoot = '/home/sukamo/webdesign/hw3'
