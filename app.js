@@ -1,9 +1,12 @@
 import express from 'express'
-import { projectRoot, } from 'setting/config.js'
+import api from './api/index'
+import { projectRoot, } from 'setting/config'
 
 const app = express()
 
 app.use(express.static('static/dist'))
+
+app.use('/api', api)
 
 app.get('/', (req, res) => {
   res.sendFile('static/dist/html/home/index.html', {
