@@ -13,4 +13,18 @@ router.get('/students$', async (req, res) => {
   }
 })
 
+router.get('/students/:numberId', async (req, res) => {
+  const numberId = req.params.numberId
+  try {
+    const data = JSON.parse(await promises.readFile(path))
+    for (let Id of data.student) {
+      if (Id[numberId])
+        res.send(Id)
+    }
+    res.status(404).send({ error: 'Not find.' })
+  } catch (e) {
+    res.status(500).send({ error: 'Something failed!' })
+  }
+})
+
 export default router
