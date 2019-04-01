@@ -1,0 +1,67 @@
+body {
+  > .main {
+    > .listAllBtn {
+      width: max-content;
+      height: 2rem;
+      font-size: 1.2rem;
+    }
+    > .listAll__listAll.listAll {
+      > .listAll__ul.ul {
+        > .ul__li {
+          font-size: 1.2rem;
+          list-style: none;
+        }
+      }
+    }
+    > .specific {
+      margin-top: 2rem;
+      > .specific__input.input {
+        > .input {
+          font-size: 1.2rem;
+        }
+      }
+      > .specific__button {
+        margin-top: .5rem;
+        width: max-content;
+        height: 2rem;
+        font-size: 1.2rem;
+      }
+      > .specific__respond.respond {
+        > .respond__ul.ul {
+          > .ul__li {
+            font-size: 1.2rem;
+            list-style: none;
+          }
+        }
+      }
+    }
+    > .add {
+      margin-top: 2rem;
+      > .add__input.input {
+        > .input {
+          font-size: 1.2rem;
+        }
+      }
+      > .add__button {
+        margin-top: .5rem;
+        width: max-content;
+        height: 2rem;
+        font-size: 1.2rem;
+      }
+    }
+    > .delete {
+      margin-top: 2rem;
+      > .delete__input.input {
+        > .input {
+          font-size: 1.2rem;
+        }
+      }
+      > .delete__button {
+        margin-top: .5rem;
+        width: max-content;
+        height: 2rem;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
